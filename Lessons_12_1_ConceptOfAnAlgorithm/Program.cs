@@ -9,14 +9,14 @@ internal class Program
 		users.Add(new User() { Login = "HotFinnishGuy", Name = "Linus Torvalds", IsPremium = true });
 		users.Add(new User() { Login = "VasyaFromUryupinsk", Name = "Vasya Petrov", IsPremium = false });
 
-        for (int i = 0; i < users.Count; i++)
-        {
+		for (int i = 0; i < users.Count; i++)
+		{
 			Console.WriteLine($"Hello my friends. Welcome {users[i].Name}");
-            if (!users[i].IsPremium)
-            {
+			if (!users[i].IsPremium)
+			{
 				ShowAds();
-            }
-        }
+			}
+		}
 	}
 	static void ShowAds()
 	{
